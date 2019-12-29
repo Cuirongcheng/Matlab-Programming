@@ -1,0 +1,165 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\崔荣成\Documents\MATLAB\InformationHiding\InformationHiding.prj" location="C:\Users\崔荣成\Documents\MATLAB\InformationHiding" name="InformationHiding" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>InformationHiding</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.3</param.version>
+    <param.authnamewatermark>崔荣成</param.authnamewatermark>
+    <param.email>1402792495@qq.com</param.email>
+    <param.company />
+    <param.summary />
+    <param.description>信息隐藏的渊源可以追溯到古希腊的隐形技术，其希腊文的字面意思是“掩盖性地写”，也就是把一种信息隐藏于另外一种信息中。
+数字化产品的出现给这些古老的思想赋予了新的表达方式：将机密信息嵌入到公开的图像、视频、语音及文本文件等载体信息中，然后通过公开信息的传输来传递机密信息，从而保证机密信息的安全。
+信息隐藏技术作为一个新兴的研究领域，涉及数字信号处理、图像处理、语音处理、密码学等多个学科；在政府、军事情报部门、银行系统、商业系统等诸多领域发挥着重要作用，广泛应用于通信保密、数字作品的版权保护、商务活动中的票据防伪、验证资料的完整性等方面。
+主要以可视化密码共享、数字图像置乱、数字水印等典型信息隐藏技术为例，演示数字图像处理在信息隐藏领域中的应用案例。</param.description>
+    <param.screenshot>C:\Users\崔荣成\Desktop\数字图像在信息隐藏领域的演示\Main.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\InformationHiding\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\InformationHiding\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\InformationHiding\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\InformationHiding\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\InformationHiding</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.company />
+      <param.summary />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Welcome.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\function.jpg</file>
+      <file>${PROJECT_ROOT}\menu.jpg</file>
+      <file>${PROJECT_ROOT}\welcome.jpg</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\DigitalImageScrambling.fig</file>
+      <file>${PROJECT_ROOT}\DigitalImageScrambling.m</file>
+      <file>${PROJECT_ROOT}\DigitalWatermarking.fig</file>
+      <file>${PROJECT_ROOT}\DigitalWatermarking.m</file>
+      <file>${PROJECT_ROOT}\InformationHiding.fig</file>
+      <file>${PROJECT_ROOT}\InformationHiding.m</file>
+      <file>${PROJECT_ROOT}\VisualPasswordSharing.fig</file>
+      <file>${PROJECT_ROOT}\VisualPasswordSharing.m</file>
+      <file>${PROJECT_ROOT}\Welcome.fig</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\InformationHiding\for_testing" name="readme.txt" optional="true">C:\Users\崔荣成\Documents\MATLAB\InformationHiding\InformationHiding\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\InformationHiding\for_testing" name="InformationHiding.exe" optional="false">C:\Users\崔荣成\Documents\MATLAB\InformationHiding\InformationHiding\for_testing\InformationHiding.exe</file>
+      <file location="${PROJECT_ROOT}\InformationHiding\for_testing" name="splash.png" optional="false">C:\Users\崔荣成\Documents\MATLAB\InformationHiding\InformationHiding\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Installation path\MATLAB\R2018b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="polyspacebugfinder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
