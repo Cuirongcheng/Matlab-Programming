@@ -1,0 +1,18 @@
+function [pt1,pt2] = features_matching( database, desc,  dist_ratio , pos1 , pos2 )
+num = 1;
+for k = 1:size(desc,1)
+    dist   = sqrt(sum((database.desc - repmat(desc(k,:),size(database.desc,1),1)).^2,2));
+    [B,IX] = sort(dist);
+    if B(1)/B(2) >= dist_ratio %nn2_dist >= dist_ratio
+        idx = 0;
+    else
+        pt2(num,:) = pos2(k,:);
+        pt1(num,:) = pos1(IX(1),:);
+        num = num + 1;
+    end
+end
+for i = 2:num-1
+    Dist = pt1(i,:) - pt1(i,:)
+    
+end
+%pos2是按照顺序来的，POS1是检索后的结果

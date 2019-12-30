@@ -1,0 +1,13 @@
+I = imread('coins.png');
+K1 = imnoise(I,'gaussian',0,0.02);
+subplot(221);imshow(K1);
+title('¸ßË¹°×ÔëÉù');
+M1 = wiener2(K1,[5,5]);
+subplot(222);imshow(M1);
+title('ÂË²¨¸ßË¹°×ÔëÉù');
+K2 = imnoise(I,'salt & pepper',0.02);
+subplot(223);imshow(K2);
+title('½·ÑÎÔëÉù');
+M2 = wiener2(K2,[9,9]);
+subplot(224);imshow(M2);
+title('ÂË²¨½·ÑÎÔëÉù');

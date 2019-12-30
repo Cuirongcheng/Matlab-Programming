@@ -1,0 +1,17 @@
+bw = imread('text.png');
+subplot(221);
+imshow(bw);
+title('原图');
+a = bw(32:45,88:98);
+subplot(222);
+imshow(a);
+title('获取模板');
+C = real(ifft2(fft2(bw).*fft2(rot90(a,2),256,256)));
+subplot(223);
+imshow(C,[]);
+title('傅里叶变换');
+c = max(C(:));
+thresh = 0.9*c;
+subplot(224);
+imshow(C > thresh);
+title('模板位置');

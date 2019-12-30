@@ -1,0 +1,17 @@
+bw1=imread('tt.bmp');
+figure(1);
+imshow(bw1);
+s=ones(2,2);
+bw2=imopen(bw1,s);%开运算
+figure(2);
+imshow(bw2);
+bw3=imclose(bw1,s);%闭运算
+figure(3);
+imshow(bw3);
+s1=strel('diamond',2);
+bw4=imopen(bw1,s1);%开运算
+figure(4);
+imshow(bw4);
+bw5=imclose(bw1,s1);%闭运算
+figure(5);
+imshow(bw5);

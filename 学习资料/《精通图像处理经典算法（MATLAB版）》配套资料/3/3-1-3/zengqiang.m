@@ -1,0 +1,12 @@
+I = imread('coins.png');
+subplot(221);imshow(I);
+title('ԭͼ');
+J1 = imadjust(I,[0.3;0.8],[0.6;1],0.2);
+subplot(222);imshow(J1);
+title('\it{r}=0.2');
+J2 = imadjust(I,[0.3;0.8],[0.6;1],1);
+subplot(223);imshow(J2);
+title('\it{r}=1');
+J3 = imadjust(I,[0.3;0.8],[0.6;1],5);
+subplot(224);imshow(J3);
+title('\it{r}=5');

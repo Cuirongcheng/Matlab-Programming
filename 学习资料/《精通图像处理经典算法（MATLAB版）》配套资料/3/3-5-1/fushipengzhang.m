@@ -1,0 +1,13 @@
+bw1=imread('liftingbody.png');
+%bw1=im2bw(bw0);
+subplot(2,6,1:2),imshow(bw1);title('(a)Ô­Í¼');
+s=ones(5);
+bw2=imerode(bw1,s);
+subplot(2,6,3:4),imshow(bw2);title('(b)¸¯Ê´Í¼ÏñÒ»');
+bw3=imdilate(bw1,s);
+subplot(2,6,5:6),imshow(bw3);title('(c)ÅòÕÍÍ¼ÏñÒ»');
+s1=strel('disk',5);
+bw4=imerode(bw1,s1);
+subplot(2,6,8:9),imshow(bw4);title('(d)¸¯Ê´Í¼Ïñ¶ş');
+bw5=imdilate(bw1,s1);
+subplot(2,6,10:11),imshow(bw5);title('(e)ÅòÕÍÍ¼Ïñ¶ş');

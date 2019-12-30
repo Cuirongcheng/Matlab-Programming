@@ -1,0 +1,12 @@
+J = imread('peppers.png');
+subplot(221),imshow(J);
+title('ԭͼ');
+K0 = imadjust(J,[0.2 0.3 0;  0.6 0.7 0.6],[],0.2);
+subplot(222),imshow(K0);
+title('\it{r}=0.2');
+K1 = imadjust(J,[0.2 0.3 0; 0.8 0.9 1],[],1);
+subplot(223),imshow(K1);
+title('\it{r}=1');
+K2 = imadjust(J,[0.2 0.3 0;  0.8 0.9 1],[],5);
+subplot(224),imshow(K2);
+title('\it{r}=5');
